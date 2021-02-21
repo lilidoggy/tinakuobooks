@@ -5,6 +5,10 @@
     <!-- Document Settings -->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="content-language" content="en-us" />
+    <meta http-equiv="content-language" content="zh-tw" />
+    <meta http-equiv="content-language" content="zh-hk" />
+    <meta http-equiv="content-language" content="zh-cn" />
 
     <!-- Base Meta -->
     {% include dynamic_title.html %}
@@ -32,8 +36,17 @@
     
     <!-- This tag outputs SEO meta+structured data and other important settings -->
     {% include head.html %}
-    {% seo %}
+
+    <!-- Google Adsense -->
+    <script data-ad-client="ca-pub-6071616698328487" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
+
+<!-- Add Google Analytics, but only for PRODUCTION builds -->
+{% if jekyll.environment == 'production' %}
+{% include analytics.html %}
+{% endif %}
+
+
 <body class="{% if paginator.page > 1 %}paged archive-template{% elsif page.class %}{{ page.class }}{% else %}home-template{% endif %}">
 
     <div class="site-wrapper">
@@ -118,12 +131,6 @@
         var maxPages = parseInt('{{ paginator.total_pages }}');
     </script>
     <script src="{{ site.baseurl }}assets/js/infinitescroll.js"></script>
-    {% endif %}
-
-
-    <!-- Add Google Analytics, but only for PRODUCTION builds -->
-    {% if jekyll.environment == 'production' %}
-    {% include analytics.html %}
     {% endif %}
 
     <!-- The #block helper will pull in data from the #contentFor other template files. In this case, there's some JavaScript which we only want to use in post.hbs, but it needs to be included down here, after jQuery has already loaded. -->
