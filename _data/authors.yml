@@ -1,6 +1,6 @@
 tina:
   username: tina
-  name: Tina Kuo
+  name: 郭瀞婷 Tina Kuo
   location: Taipei, Taiwan
   url_full: 
   url: 
@@ -9,3 +9,14 @@ tina:
   facebook: tinachingting
   twitter: 
   cover: assets/images/stock/writing.jpg
+michael:
+  username: michael
+  name: 孩子爸 Michael
+  location: Taipei, Taiwan
+  url_full: 
+  url: 
+  bio: 喜歡幻想，更喜歡動手做東西
+  picture: assets/images/bio-photo-michael-2.jpg
+  facebook:
+  twitter: 
+  cover: assets/images/stock/design.jpg

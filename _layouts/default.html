@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-tw">
 <head>
 
     <!-- Document Settings -->
@@ -91,10 +91,10 @@
             <a class="subscribe-overlay-close" href="#"></a>
             <div class="subscribe-overlay-content">
                 {% if site.logo %}
-                    <img class="subscribe-overlay-logo" src="{{ site.baseurl }}{{ site.logo }}" alt="{{ site.title }}" />
+                    <img class="subscribe-overlay-logo" src="{{ site.baseurl }}{{ site.logo_subscribe }}" alt="{{ site.title }}" />
                 {% endif %}
                 <h1 class="subscribe-overlay-title">Subscribe to {{ site.title }}</h1>
-                <p class="subscribe-overlay-description">別錯過精彩！定期會發布好玩有益的小確幸.</p>
+                <p class="subscribe-overlay-description">通過搞笑有趣的丁小飛故事學英文？！有興趣的爸爸媽媽請訂閱！</p>
                 {% include subscribe-form-mailchimp.html placeholder="youremail@example.com" %}
             </div>
         </div>
@@ -115,7 +115,10 @@
         crossorigin="anonymous">
     </script>
     <script type="text/javascript" src="{{ site.baseurl }}assets/js/jquery.fitvids.js"></script>
-    <script type="text/javascript" src="https://demo.ghost.io/assets/js/jquery.fitvids.js?v=724281a32e"></script>
+    
+    <!-- 
+    <script type="text/javascript" src="https://demo.ghost.io/assets/js/jquery.fitvids.js?v=724281a32e"></script> 
+    -->
 
 
     <!-- Paginator increased to "infinit" in _config.yml -->
